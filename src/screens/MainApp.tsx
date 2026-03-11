@@ -5,6 +5,7 @@ import { DietTab } from './tabs/DietTab';
 import { FitnessTab } from './tabs/FitnessTab';
 import { ProgressTab } from './tabs/ProgressTab';
 import { LearnTab } from './tabs/LearnTab';
+import { GelatinaTab } from './tabs/GelatinaTab';
 
 export const MainApp: React.FC = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -16,6 +17,7 @@ export const MainApp: React.FC = () => {
             case 2: return <FitnessTab />;
             case 3: return <ProgressTab />;
             case 4: return <LearnTab />;
+            case 5: return <GelatinaTab />;
             default: return <HomeTab />;
         }
     };

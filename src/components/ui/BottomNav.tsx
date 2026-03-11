@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Utensils, Activity, LineChart, GraduationCap } from 'lucide-react';
+import { Home, Utensils, Activity, LineChart, GraduationCap, PlaySquare } from 'lucide-react';
 
 interface BottomNavProps {
     activeTab: number;
@@ -13,6 +13,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, setActiveTab })
         { id: 2, label: 'Fitness', icon: <Activity size={24} /> },
         { id: 3, label: 'Progresso', icon: <LineChart size={24} /> },
         { id: 4, label: 'Crescer', icon: <GraduationCap size={24} /> },
+        { id: 5, label: 'Gelatina', icon: <PlaySquare size={24} /> },
     ];
 
     return (
