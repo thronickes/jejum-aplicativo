@@ -10,6 +10,7 @@ interface Article {
     subtitle: string;
     readTime: string;
     content: string;
+    videoUrl?: string;
 }
 
 const articlesData: Article[] = [
@@ -66,6 +67,16 @@ const articlesData: Article[] = [
         subtitle: "Tudo o que precisa saber para dar os primeiros passos.",
         readTime: "5 min",
         content: "O Jejum Intermitente não é uma dieta, é um padrão de horários. Não foca no que você come, mas sim em QUANDO você come.\n\n**Como funciona a biologia?**\nQuando comemos, o corpo usa a comida como energia imediata (açúcar/glicose). O que sobra é guardado como gordura com a ajuda de um hormônio chamado Insulina.\n\nQuando jejuamos (passamos horas sem comer), a insulina cai drasticamente. Sem a energia da comida, o corpo é obrigado a abrir as portas das reservas de gordura e começar a 'queimá-la' para sobreviver.\n\n**Como começar?**\n* **Passo 1:** Defina a sua janela. O método mais comum é o 16:8. Jejuar por 16 horas e comer em 8 horas.\n* **Passo 2:** Ajuste aos seus horários. Por exemplo, jante às 20h00, durma, pule o pequeno-almoço e faça a primeira refeição apenas às 12h00 do dia seguinte.\n* **Passo 3:** Coma com sabedoria. Durante as 8 horas permitidas, faça 2 ou 3 refeições saudáveis, focando em proteínas, vegetais e gorduras boas para manter a saciedade no jejum seguinte.\n\nO início pode exigir adaptação (de 3 a 7 dias). O seu corpo está a reaprender a usar gordura como combustível. Tenha paciência, beba muita água e confie no processo!"
+    },
+    {
+        id: 7,
+        icon: "🍓",
+        iconBg: "#FCE7F3", // bg-pink-100
+        title: "Gelatina Mounjaro",
+        subtitle: "Aprenda a fazer a famosa gelatina que ajuda na saciedade.",
+        readTime: "2 min",
+        content: "Assista ao vídeo abaixo para aprender como preparar a Gelatina Mounjaro, uma ótima opção para manter a saciedade e auxiliar no seu processo de emagrecimento.",
+        videoUrl: "https://www.youtube.com/embed/dEYQr33g2r8"
     }
 ];
 
@@ -230,6 +241,20 @@ export const LearnTab: React.FC = () => {
 
                         {/* Article Content */}
                         <div style={{ fontSize: '1rem' }}>
+                            {selectedArticle.videoUrl && (
+                                <div style={{ marginBottom: '1.5rem', borderRadius: '12px', overflow: 'hidden' }}>
+                                    <iframe 
+                                        width="100%" 
+                                        height="315" 
+                                        src={selectedArticle.videoUrl} 
+                                        title="YouTube video player" 
+                                        frameBorder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerPolicy="strict-origin-when-cross-origin" 
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            )}
                             {renderContent(selectedArticle.content)}
                         </div>
                     </div>
