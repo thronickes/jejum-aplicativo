@@ -75,7 +75,27 @@ const articlesData: Article[] = [
         title: "Gelatina Mounjaro",
         subtitle: "Aprenda a fazer a famosa gelatina que ajuda na saciedade.",
         readTime: "2 min",
-        content: "Assista ao vídeo abaixo para aprender como preparar a Gelatina Mounjaro, uma ótima opção para manter a saciedade e auxiliar no seu processo de emagrecimento.",
+        content: `Assista ao vídeo abaixo para aprender como preparar a Gelatina Mounjaro, uma ótima opção para manter a saciedade e auxiliar no seu processo de emagrecimento.
+
+**Ingredientes Principais (para o chá base):**
+* **Água** (quantidade suficiente para ferver por 10-15 minutos)
+* **Cravo-da-índia**
+* **Canela em pau** (ou em pó, se for adicionar depois)
+* **Gengibre fresco** (ou em pó, se for adicionar depois)
+* **Hibisco** (flores secas)
+* **Cavalinha** (ervas secas)
+
+**Ingredientes para a Finalização:**
+* **Gelatina neutra**, incolor e sem sabor (colágeno puro)
+* **Óleo de coco** (apenas para untar o refratário)
+* **Adoçante Estévia** (opcional, apenas algumas gotas se desejar doce)
+
+**Breve resumo do preparo:**
+* Ferve-se a água com o cravo, a canela e o gengibre por 10 a 15 minutos (decocção).
+* Desliga-se o fogo e adiciona-se o hibisco e a cavalinha, deixando em infusão por 5 minutos.
+* Coa-se o chá e, com ele ainda morno, dissolve-se bem a gelatina incolor.
+* Coloca-se em um recipiente untado com óleo de coco e leva-se à geladeira por cerca de 2 horas até firmar.
+* Corta-se em cubinhos (balinhas) e mantém-se na geladeira.`,
         videoUrl: "https://www.youtube.com/embed/dEYQr33g2r8"
     }
 ];
